@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="anime.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <a >
+               <h4>MYSTO Serveur</h4> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaroption"
+                aria-controls="navabaroption" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <a class="nav-link" href="index.html">Accueil</a>
+                <a class="nav-link" href="shonen.html">Aventure</a>
+                <a class="nav-link" href="comedie.html">Comédie</a>
+                <a class="nav-link" href="drame.html">Drame</a>
+            </button>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <p class="vide" href="index.html">hhhaccueilllllllllllll</p>
+                    <a class="nav-link" href="index.html">Accueil</a>
+                    <a class="nav-link" href="shonen.html">Aventure</a>
+                    <a class="nav-link" href="comedie.html">Comédie</a>
+                    <a class="nav-link" href="drame.html">Drame</a>
+                   
+                </div>
+                <form class="d-flex" role="search">
+                    <input id="searchbar" onkeyup="search_anime()" name="search" class="form-control me-2" type="search" placeholder="shonen, drame..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">search</button>
+                </form> 
+            </div>
+           
+            <p class="vide" href="index.html">hh</p>
+                <a class="nav-link" href="connexion.html">Connexion </a>
+               
+              
+            </div>
+            
+        </div>
+    </nav>
+</header>
+<div class="sucess">
+    <a href="logout.php">Déconnexion</a>
+    <h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
+    
+    </div><main>
+   
+    <div class="container">
+        <h5 class="display-1 text-light my-1">Notre séléction</h5>
+              <div class="row my-4">
+            <div id="carouselPicture" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPicture" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPicture" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselPicture" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselPicture" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselPicture" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="animage/my-hero-academia.jpg"  alt="Architecture" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="animage/halo.jpg" alt="Architecture" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="animage/ironman.jpg" alt="Architecture" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPicture"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPicture"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+</main>
+<br>
+      <footer class="mt-4 bg-info text-center text-dark p-3">
+        <span> fait via bootstrap</span>
+    </footer>
+
+   
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    <script src="anime.js"></script>
+      
+   
+</html>

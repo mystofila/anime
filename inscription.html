@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="anime.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <a >
+               <h4>MYSTO Serveur</h4> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaroption"
+                aria-controls="navabaroption" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <a class="nav-link" href="index.html">Accueil</a>
+                <a class="nav-link" href="shonen.html">Aventure</a>
+                <a class="nav-link" href="comedie.html">Comédie</a>
+                <a class="nav-link" href="drame.html">Drame</a>
+            </button>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <p class="vide" href="index.html">hhhaccueilllllllllllll</p>
+                    <a class="nav-link" href="index.html">Accueil</a>
+                    <a class="nav-link" href="shonen.html">Aventure</a>
+                    <a class="nav-link" href="comedie.html">Comédie</a>
+                    <a class="nav-link" href="drame.html">Drame</a>
+                   
+                </div>
+                <form class="d-flex" role="search">
+                    <input id="searchbar" onkeyup="search_anime()" name="search" class="form-control me-2" type="search" placeholder="shonen, drame..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">search</button>
+                </form> 
+            </div>
+           
+            <p class="vide" href="index.html">hh</p>
+                <a class="nav-link" href="connexion.html">Connexion </a>
+                
+            </div>
+            
+        </div>
+    </nav>
+</header>
+<div class="sucess">
+    <a href="logout.php">Déconnexion</a>
+    <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 bg-dark text-info rounded mt-5 p-5">
+                    <h4 class="display-4"> Inscription</h4>
+
+                    <hr class="my-3">
+
+                    <form action="mailto:text@example.com" method="post">
+                        <div class="mb-3 row">
+                            <div class="col col-3">
+                                <label for="lastname" class="form-label" placeholder="Dupont">Nom :</label>
+                            </div>
+                            <div class="col col-9">
+                                <input type="text" class="form-control" id="lastname" name="lastname"
+                                    placeholder="durand">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col col-3">
+                                <label for="firstname" class="form-label">Prénom :</label>
+                            </div>
+                            <div class="col col-9">
+                                <input type="text" class="form-control" id="firstname" name="firstname"
+                                    placeholder="richard">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col col-3">
+                                <label for="email" class="form-label">Adresse mail :</label>
+                            </div>
+                            <div class="col col-9">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="adressemail@example.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col col-3">
+                                <label for="username" class="form-label">Pseudo:</label>
+                            </div>
+                            <div class="col col-9">
+                                <input type="text" class="form-control" id="username" name="username"
+                                    placeholder="Pseudo" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col col-3">
+                                <label for="passwordVal" class="form-label">Mot de Passe :</label>
+                            </div>
+                            <div class="col col-9">
+                                <input type="password" class="form-control" id="passwordVal" name="passwordVal"
+                                    placeholder="Azertyuiop" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col col-3">
+                                <label for="passwordConf" class="form-label">Confirmation :</label>
+                            </div>
+                            <div class="col col-9">
+                                <input type="password" class="form-control" id="passwordConf" name="passwordConf"
+                                    placeholder="Azertyuiop" required>
+                            </div>
+                        </div>
+
+
+                        <div class="text-end">
+                            <button class="btn btn-outline-light" type="submit"><i class="bi bi-send"></i>
+                                Valider</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="connexion.html">Déja inscrit ?</a>
+        </div>
+        <br>
+        <footer class="mt-4 bg-info text-center text-dark p-3">
+            <span> fait via bootstrap</span>
+        </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3"></script>
+
+</html>
